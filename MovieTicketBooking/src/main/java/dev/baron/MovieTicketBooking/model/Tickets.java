@@ -1,5 +1,6 @@
 package dev.baron.MovieTicketBooking.model;
 
+import dev.baron.MovieTicketBooking.model.constant.TicketStatus;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;

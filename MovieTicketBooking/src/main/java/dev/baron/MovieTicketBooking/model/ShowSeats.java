@@ -1,6 +1,7 @@
 package dev.baron.MovieTicketBooking.model;
 
 
+import dev.baron.MovieTicketBooking.model.constant.ShowSeatStatus;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
