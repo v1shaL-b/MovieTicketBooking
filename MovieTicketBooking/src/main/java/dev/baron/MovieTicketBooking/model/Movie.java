@@ -1,8 +1,11 @@
 package dev.baron.MovieTicketBooking.model;
 
-import jakarta.persistence.Entity;
+import dev.baron.MovieTicketBooking.model.constant.MovieFeatures;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.List;
 
 @Getter
 @Setter
@@ -10,5 +13,12 @@ import lombok.Setter;
 public class Movie extends BaseModel{
 
     private String name;
-    private Actor actor;
+    private String description;
+
+    @ManyToMany
+    private List<Actor> actor;
+
+    @ElementCollection
+    @Enumerated(EnumType.STRING)
+    private List<MovieFeatures> movieFeatures;
 }

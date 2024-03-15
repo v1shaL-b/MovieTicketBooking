@@ -2,6 +2,7 @@ package dev.baron.MovieTicketBooking.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
 import lombok.Getter;
 import lombok.Setter;
@@ -23,5 +24,6 @@ public class Shows extends BaseModel{
     @ManyToOne
     private Auditorium auditorium;
 
+    @OneToMany
     private List<ShowSeats> showSeats;
 }
