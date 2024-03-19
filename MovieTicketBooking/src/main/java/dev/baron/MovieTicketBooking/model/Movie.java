@@ -9,7 +9,7 @@ import java.util.List;
 
 @Getter
 @Setter
-@Entity(name = "MOVIES_MASTER")
+@Entity
 public class Movie extends BaseModel{
 
     private String name;

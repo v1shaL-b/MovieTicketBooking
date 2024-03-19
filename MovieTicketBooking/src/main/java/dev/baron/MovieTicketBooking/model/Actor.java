@@ -8,7 +8,7 @@ import java.util.List;
 
 @Getter
 @Setter
-@Entity(name = "ACTOR_INFO")
+@Entity
 public class Actor extends BaseModel{
 
     private String name;

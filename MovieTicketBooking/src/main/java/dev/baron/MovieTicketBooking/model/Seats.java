@@ -10,7 +10,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@Entity(name = "SEATS_MASTER")
+@Entity
 public class Seats extends BaseModel{
 
     private int col;

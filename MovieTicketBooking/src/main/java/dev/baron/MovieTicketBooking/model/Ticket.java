@@ -10,10 +10,12 @@ import java.util.List;
 
 @Getter
 @Setter
-@Entity(name = "TICKET_MASTER")
-public class Tickets extends BaseModel{
+@Entity
+public class Ticket extends BaseModel{
+
 
     private LocalDateTime timeOfBooking;
+
     private double totalAmount;
 
     @OneToMany

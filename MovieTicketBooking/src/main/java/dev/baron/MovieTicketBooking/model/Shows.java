@@ -12,7 +12,7 @@ import java.util.List;
 
 @Getter
 @Setter
-@Entity(name = "SHOWS_MASTER")
+@Entity
 public class Shows extends BaseModel{
 
     private LocalDateTime startTime;

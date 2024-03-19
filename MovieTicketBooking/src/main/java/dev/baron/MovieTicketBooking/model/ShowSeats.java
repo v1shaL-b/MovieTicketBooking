@@ -11,7 +11,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@Entity(name = "SHOW_SEATS_MASTER")
+@Entity
 public class ShowSeats extends BaseModel{
 
     private int price;
@@ -24,4 +24,14 @@ public class ShowSeats extends BaseModel{
 
     @Enumerated(EnumType.STRING)
     private ShowSeatStatus showSeatStatus;
+
+    public ShowSeats() {
+    }
+
+    public ShowSeats(int price, Shows show, Seats seat, ShowSeatStatus showSeatStatus) {
+        this.price = price;
+        this.show = show;
+        this.seat = seat;
+        this.showSeatStatus = showSeatStatus;
+    }
 }

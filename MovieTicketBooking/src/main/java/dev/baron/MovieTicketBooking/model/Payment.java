@@ -21,7 +21,7 @@ public class Payment extends BaseModel{
     private String referenceId;
 
     @ManyToOne
-    private Tickets ticket;
+    private Ticket ticket;
 
     @Enumerated(EnumType.STRING)
     private PaymentStatus paymentStatus;
